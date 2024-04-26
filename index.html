@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosméticos Araujo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https: //fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo"> Home</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> Promoção</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> Lançamentos</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> Maquiagem</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> Cabelos</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> Cuidados Faciais </a>
+                </li>
+            </ul>
+            <img src="img/imagens/Logotipo CA (1).jpg" alt="Logo da Araújo Cosméticos" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Cosméticos</b>Araujo</h1>
+        </div>
+        <ul class="opcoes">
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Home</a></li>
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Lançamentos</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> Maquiagens</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> Perfumaria</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> Esmaltaltaria</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"> Cuidados Faciais </a>
+                </li>
+
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Promoções</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Naturais</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Veganos</a></li>
+        </ul>
+        <div class="container">
+            <a href="#">
+                <img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem contaniner__imagem-transparente"> </a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuário.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+
+    </header>
+    <section class="banner">
+        <input type="search" class="banner__pesquisa" placeholder="O que você procura hoje?">
+
+
+    </section>
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">Lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/imagens/perfume.jpg" alt="perfume">
+                    </div>
+                    <div class="swiper-slide"> <img src="img/imagens/po.jpg" alt="pó para rosto"></div>
+                    <div class="swiper-slide"><img src="img/imagens/perfume12.jpg" alt="perfume"></div>
+                    <div class="swiper-slide"><img src="img/imagens/sabonete5.jpg" alt="Cosméticos naturais"></div>
+                    <div class="swiper-slide"><img src="img/imagens/sabonetes3.jpg" alt="sabonete"></div>
+                    <div class="swiper-slide"><img src="img/imagens/sombras3.jpg" alt="sombra">
+                    </div>
+
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descricao">
+                    <!--1º coluna-->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por .... </h3>
+                        <h2 class="descricao__titulo-livro">Cosméticos Naturais</h2>
+                        <p class="descricao__texto"> São formulados sem qualquer tipo de componente animal. Além disso,
+                            sendo este um ponto de extrema importância, não são testados em animais.</p>
+                    </div>
+                    <!--2º coluna-->
+                    <img src="img/cosméticos vegano.jpeg" descricao__imagem">
+                </div>
+
+                <!--2linha-->
+                <div class="card__botoes">
+                    <!--1coluna-->
+                    <ul class="botoes">
+                        <li class="botoes__item"> <img src="img/Favoritos.svg" alt="Favoritar livro"> </li>
+                        <li class="botoes__item"> <img src="img/Compras.svg" alt="Adicionar carrinho"> </li>
+                    </ul>
+                    <!--2coluna-->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section>
+        <section class="carrosel">
+            <h2 class="carrosel__titulo"> Mais Vendidos</h2>
+            <!-- Slider main container -->
+            <div class="carrossel__container">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/sabonetes.jpeg" alt="Sabonestes">
+                        </div>
+                        <div class="swiper-slide"> <img src="img/shampoo1.jpeg" alt="Shampoos"></div>
+                        <div class="swiper-slide"><img src="img/Zaad.jpeg" alt="Perfume">
+                        </div>
+                        <div class="swiper-slide"><img src="img/malbec.jpeg" alt="Perfume"></div>
+                        <div class="swiper-slide"><img src="img/sabonetes1.jpeg" alt="sabonetes"></div>
+                        <div class="swiper-slide"><img src="img/nativeSPA.jpeg" alt="hidratantes">
+                        </div>
+
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+
+                <div class="card">
+                    <!-- 1º linha -->
+                    <div class="card__descricao">
+                        <!--1º coluna-->
+                        <div class="descricao">
+                            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrela">
+                            <h3 class="descricao__titulo"> Produto do Mês</h3>
+                            <h2 class="descricao__titulo-livro">Produtos naturais</h2>
+                            <p class="descricao__texto"> São todos aqueles que não tem a utilização de ativos naturais
+                                de alta performance e qualidade para uma experiência única</p>
+                        </div>
+                        <!--2º coluna-->
+                        <img src="img/cosmeticos naturais 2.jpeg" class="descricao__imagem">
+                    </div>
+                    <!--2linha-->
+                    <div class="card__botoes">
+                        <!--1coluna-->
+
+                        <ul class="botoes">
+                            <li class="botoes__item"> <img src="img/Favoritos.svg" alt="Favoritar livro" </li>
+                            <li class="botoes__item"> <img src="img/Compras.svg" alt="Adicionar carrinho" </li>
+                        </ul>
+
+
+                        <!--2coluna-->
+
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topicos">
+            <h2 class="topicos__titulos">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__item"> <a href="#" class="topicos__link">Perfumes</a></li>
+                <li class="topicos__item"> <a href="#" class="topicos__link">Maquiagens</a></li>
+                <li class="topicos__item"> <a href="#" class="topicos__link">Hidratantes</a></li>
+                <li class="topicos__item"> <a href="#" class="topicos__link">Shampoos</a></li>
+                <li class="topicos__item"> <a href="#" class="topicos__link">Batons</a></li>
+                <li class="topicos__item"> <a href="#" class="topicos__link">Sombras</a></li>
+                <li class="topicos__item"> <a href="#" class="topicos__link">Base</a></li>
+                <li class="topicos__item"> <a href="#" class="topicos__link">Esmaltes</a></li>
+            </ul>
+        </section>
+
+        <section class="contato">
+            <div class="contato__descricao">
+                <h2 class="contato__titulo">Fique por dentro dos Lançamentos</h2>
+                <p class="contato__texto"> Atualizações de Lançamentos: perfumes, hidratantes e outros.</p>
+            </div>
+            <input type="email" class="contato__email" placeholder="Cadastre seu e-mail"></input>
+        </section>
+
+        <hr />
+
+        <footer class="rodape">
+            <h2 class="rodape__titulo">Cosméticos Araujo</h2>
+            <ul class="lista-rodape">
+                <li class="lista-rodape__titulo">Dúvidas</li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Perguntas Frequentes</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Formas de pagamento</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Frete e Entrega</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Trocas e Devoluções</a>
+                </li>
+
+            </ul>
+            <ul class="lista-rodape">
+                <li class="lista-rodape__titulo">Institucional</li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Nossa História</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Trabalhe Conosco </a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Portal do Revendedor</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Cashback </a>
+                </li>
+            </ul>
+            <ul class="lista-rodape">
+                <li class="lista-rodape__titulo">Marcas</li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Boticário</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Natura</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Vult </a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Mary kay </a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Renode</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Avon</a>
+                </li>
+
+            </ul>
+
+        </footer>
+
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+        </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
